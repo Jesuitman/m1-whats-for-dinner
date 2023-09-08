@@ -9,8 +9,30 @@
       <button class="headerButton">Add a Recipe</button>
     </div>
     <div class="container">
-      <div class="box">Box 1</div>
-      <div class="box">Box 2</div>
+      <div class="box radio-box">
+        <div class="radio-box-banner">What are you looking for?</div>
+        <label>
+          <input type="radio" name="category" value="dessert"> Dessert
+        </label>
+        <label>
+          <input type="radio" name="category" value="dinner"> Dinner
+        </label>
+        <label>
+          <input type="radio" name="category" value="side-dish"> Side Dish
+        </label>
+        <label>
+          <input type="radio" name="category" value="entire-meal"> Entire Meal
+        </label>
+        <button class="cook-button">Let's Cook!</button>
+      </div>
+      <div class="box image-box">
+        <img src="./assets/cookpot.svg" alt="Cookpot Image">
+        <p class="meal">Cooking in progress...</p>
+      </div>
+      <label for="toggleButton" class="cook-button-label">
+        <input type="checkbox" id="toggleButton" class="toggle-checkbox">
+        Let's Cook!
+      </label>
     </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
